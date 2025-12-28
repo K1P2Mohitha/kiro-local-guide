@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Local Guide</title>
+</head>
+<body>
+  <h2>🎓 College Local Guide</h2>
+
+  <p>Ask anything about college surroundings:</p>
+
+  <input id="question" type="text" placeholder="Type your question here" style="width: 300px;" />
+  <br><br>
+
+  <button onclick="askGuide()">Ask Local Guide</button>
+
+  <p><strong>Response:</strong></p>
+  <div id="response" style="border:1px solid #ccc; padding:10px;"></div>
+
+  <script>
+    function askGuide() {
+      const q = document.getElementById("question").value;
+
+      // Demo response (for visual proof)
+      document.getElementById("response").innerText =
+        "As a senior, I’d say around our college, tea stalls near the gate are the main hangout spots. " +
+        "Evenings after 4 PM are best, and most students say 'lite teesko' when things get stressful.";
+    }
+  </script>
+</body>
+</html>
